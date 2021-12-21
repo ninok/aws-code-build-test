@@ -1,6 +1,9 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - sudo apt-get install gcc-aarch64-linux-gnu
   build:
     commands:
       - g++ src/main.cpp
